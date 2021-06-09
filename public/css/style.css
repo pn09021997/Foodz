@@ -38,23 +38,25 @@ body #myBtn:hover {
 
 /*Top Header*/
 /*top-header mobile*/
-@media screen and (max-width: 768px) {
-  .top-header {
-    position: relative;
-  }
+@media screen and (max-width: 400px) {
   .top-header .home {
     position: absolute;
     visibility: hidden;
   }
   .banner .introduce1 {
-    transform: translateX(-110px) translateY(-20px) !important;
+    transform: translateX(1.5rem) !important;
   }
   .banner .introduce1 > img {
-    padding: 10px;
+    width: 3rem !important;
+    height:  2.6rem !important;
   }
-  .banner .introduce1 > p {
-    padding: 10px;
-    font-size: 55px !important;
+  .banner .introduce1 #banner-title1 {
+    font-size: 2.4rem !important;
+    margin-bottom: 0;
+  }
+  .banner .introduce1 #banner-title2 {
+    font-size: 1.9rem !important;
+    font-weight: lighter !important;
     margin-bottom: 0;
   }
 }
@@ -78,11 +80,11 @@ body #myBtn:hover {
 /*banner*/
 .banner-bg {
   background: url("../images/demo3-2500601066.jpg");
-  width: 1360px;
+  width: 100%;
   height: 650px;
   position: relative;
 }
-.banner p {
+.banner #banner-title1 {
   color: #fff;
   font-size: 70px;
   font-weight: 700;
@@ -95,7 +97,7 @@ body #myBtn:hover {
   width: 80px;
   height: 69px;
 }
-.introduce1 h1 {
+.introduce1 #banner-title2 {
   color: #e5d7b2;
 }
 
@@ -110,29 +112,40 @@ body #myBtn:hover {
 
 /*Feature Menu*/
 /*feature-menu mobile*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
+  .feature-menu #demo{
+    margin-bottom: 30rem !important;
+  }
   .feature-menu #img-chief3 {
-    width: 320px !important;
-    height: 395px !important;
-    transform: translateX(120px) !important;
+    width: 13rem !important;
+    height: 16rem !important;
+    position: absolute;
+    right: 8rem !important;
+    top: 0 !important;
   }
 
-  .feature-menu #img-chief1 {
-    width: 195px !important;
-    height: 290px !important;
-    transform: translateX(40px) translateY(-220px) !important;
+  .feature-menu #img-chief1 { 
+    width: 9rem !important;
+    height: 9.7rem !important;
+    position: absolute;
+    right: 12rem !important;
+    bottom: -3rem !important;
   }
 
   .feature-menu #img-chief2 {
-    width: 205px !important;
-    height: 254px !important;
-    transform: translateX(-200px) translateY(-160px) !important;
+    width: 9rem !important;
+    height: 10rem !important;
+    position: absolute;
+    right: -7rem !important;
+    bottom: -2rem !important;
   }
 
   .feature-menu #info-chief {
-    width: 120px !important;
-    height: 76px !important;
-    transform: translateX(-60px) translateY(250px) !important;
+    width: 5rem !important;
+    height: 3rem !important;
+    position: absolute;
+    right: -2rem !important;
+    top: -3rem !important;
   }
 
   .feature-menu #hidden-mobile {
@@ -224,7 +237,6 @@ body #myBtn:hover {
   }
   .informationonday .mobile-display-hidden {
     visibility: visible !important;
-    background: red;
     margin-top: 239px;
     transform: translateX(-12px);
     background: #172130;
