@@ -23,7 +23,7 @@ body #myBtn {
   display: none;
   position: fixed;
   bottom: 80px;
-  right: 30px;
+  right: 0;
   z-index: 99;
   border: none;
   outline: none;
@@ -44,7 +44,7 @@ body #myBtn:hover {
     visibility: hidden;
   }
   .banner .introduce1 {
-    transform: translateX(1.5rem) !important;
+    transform: translateX(-3.5rem) !important;
   }
   .banner .introduce1 > img {
     width: 3rem !important;
@@ -120,7 +120,7 @@ body #myBtn:hover {
     width: 13rem !important;
     height: 16rem !important;
     position: absolute;
-    right: 8rem !important;
+    right: 13rem !important;
     top: 0 !important;
   }
 
@@ -128,7 +128,7 @@ body #myBtn:hover {
     width: 9rem !important;
     height: 9.7rem !important;
     position: absolute;
-    right: 12rem !important;
+    right: 16rem !important;
     bottom: -3rem !important;
   }
 
@@ -136,7 +136,7 @@ body #myBtn:hover {
     width: 9rem !important;
     height: 10rem !important;
     position: absolute;
-    right: -7rem !important;
+    right: -2rem !important;
     bottom: -2rem !important;
   }
 
