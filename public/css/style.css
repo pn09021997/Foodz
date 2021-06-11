@@ -43,19 +43,23 @@ body #myBtn:hover {
     position: absolute;
     visibility: hidden;
   }
-  .banner .introduce1 {
-    transform: translateX(-3.5rem) !important;
-  }
+  .banner .banner-bg {
+    height: 500px !important;
+   }
   .banner .introduce1 > img {
-    width: 3rem !important;
-    height:  2.6rem !important;
+    width: 4rem !important;
+    height:  4rem !important;
   }
+  .banner .introduce1 {
+    transform: translateX(70px) translateY(-50px) !important;
+    padding: 0 85px 0 0  !important;
+  } 
   .banner .introduce1 #banner-title1 {
-    font-size: 2.4rem !important;
+    font-size: 3.2rem !important;
     margin-bottom: 0;
   }
   .banner .introduce1 #banner-title2 {
-    font-size: 1.9rem !important;
+    font-size: 2.2rem !important;
     font-weight: lighter !important;
     margin-bottom: 0;
   }
@@ -117,61 +121,63 @@ body #myBtn:hover {
     margin-bottom: 30rem !important;
   }
   .feature-menu #img-chief3 {
-    width: 13rem !important;
-    height: 16rem !important;
+    width: 16.5rem !important;
+    height: 19.8rem !important;
     position: absolute;
-    right: 13rem !important;
+    right: 11.5rem !important;
     top: 0 !important;
   }
 
   .feature-menu #img-chief1 { 
-    width: 9rem !important;
-    height: 9.7rem !important;
+    width: 10rem !important;
+    height: 13rem !important;
     position: absolute;
     right: 16rem !important;
-    bottom: -3rem !important;
+    bottom: -8rem !important;
   }
 
   .feature-menu #img-chief2 {
-    width: 9rem !important;
-    height: 10rem !important;
+    width: 10.5rem !important;
+    height: 13rem !important;
     position: absolute;
     right: -2rem !important;
-    bottom: -2rem !important;
+    bottom: -7rem !important;
   }
 
   .feature-menu #info-chief {
-    width: 5rem !important;
-    height: 3rem !important;
+    width: 6rem !important;
+    height: 4rem !important;
     position: absolute;
-    right: -2rem !important;
-    top: -3rem !important;
+    right: 2rem !important;
+    top: 1rem !important;
   }
 
+  .feature-menu .hidden {
+    visibility: hidden;
+    position: absolute;
+  } 
+  .feature-menu .feature-menu-item {
+    padding-left: 5rem;
+  } 
+  .feature-menu .description {
+    font-size: 0.9rem !important;
+  }
+  .feature-menu .product-name {
+    font-size: 1.3rem !important;
+    padding: 0 10px 0 10px !important;
+  } 
   .feature-menu #hidden-mobile {
     visibility: hidden;
     position: absolute;
   }
+
   .feature-menu #we-serve-passion {
-    transform: translateY(-100px);
     text-align: center;
-    font-size: 40px;
+    font-size: 2.2rem !important;
   }
 
   .feature-menu .slide-tools {
-    transform: translateY(80px) !important;
-    margin-left: -400px !important;
-    visibility: hidden;
-    position: absolute;
-  }
-
-  .feature-menu #menu-mobile-format {
-    padding-left: 120px !important;
-    transform: translateY(-100px);
-  }
-  .feature-menu #menu-mobile-format > .description {
-    font-size: 14px !important;
-    padding-right: -20px !important;
+    display: none !important;
   }
   .feature-menu .mobile-hidden {
     visibility: visible !important;
@@ -227,18 +233,22 @@ body #myBtn:hover {
 
 /*Information On Day*/
 /*information-on-day mobile*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
   .informationonday {
-    margin-top: 150px !important;
-    padding-left: 130px;
+    margin-top: 200px !important;
+    padding-left: 15px;
+  }
+  .informationonday .introduce-format {
+    font-size: 2rem !important;
+    font-weight: lighter !important ;
   }
   .info2 {
     width: 370px !important;
   }
   .informationonday .mobile-display-hidden {
     visibility: visible !important;
-    margin-top: 239px;
-    transform: translateX(-12px);
+    margin-top: 250px;
+    transform: translateY(-12px) translateX(-12px);
     background: #172130;
   }
   .informationonday .info2 > #introduce-moblie-hidden {
@@ -288,16 +298,20 @@ body #myBtn:hover {
 
 /*categories*/
 /*categories mobile*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
   .categories {
-    margin-top: 250px;
+    margin-top: 200px;
   }
   .categories .mobile-hidden {
     visibility: hidden;
     position: absolute;
   }
+  .categories .menu .description {
+    padding-right: 50px;
+  }
   .categories .menu {
     margin-top: 50px;
+    margin-left: 50px;
   }
   .menu .mobile-hidden-link {
     visibility: visible !important;
@@ -339,23 +353,35 @@ body #myBtn:hover {
 }
 
 /*Get Promo Code*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
+  .getpromocode {
+    padding: 10px 23px 28px 30px;
+    margin-top: 70px !important;
+  }
+  .getpromocode .mobile-hidden {
+    display: block !important;
+  } 
+  .getpromocode .getpromocode-bg {
+    height: 280px !important;
+    width: 360px !important;
+    background-position: 25% top !important;
+  } 
   .getpromocode #discount {
-    font-size: 17.5px !important;
+    font-size: 2rem !important;
     font-weight: lighter !important;
   }
   .getpromocode #get-promocode {
-    font-size: 22px !important;
+    font-size: 2rem !important;
   }
   .getpromocode .promocode-form {
-    margin-top: 50px !important;
+    margin: 300px 20px 0  !important; 
   }
   .getpromocode #input-email {
     background: #404351;
     border: #3f4450 1px solid;
-    height: 57px !important;
-    width: 160px !important;
-    transform: translateX(-35px) !important;
+    height: 50px !important;
+    width: 181px !important;
+    transform: translateX(-100px) !important;
   }
 }
 .getpromocode {
@@ -396,11 +422,12 @@ body #myBtn:hover {
 
 /*Delivery Service*/
 /*delivery-service-mobile*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
   .delivery-service {
     padding: 0 0 !important;
     transform: translateY(-50px);
     padding-left: 15px !important;
+    margin-top: 300px;
   }
   .delivery-service #desc-format-left {
     padding-left: 0px !important;
@@ -412,7 +439,7 @@ body #myBtn:hover {
     padding: 0 0 !important;
   }
   .delivery-service > .description .desc-format {
-    font-weight: 600 !important;
+    margin-bottom:25px !important;
   }
 }
 /*delivery-service-normal*/
@@ -423,11 +450,12 @@ body #myBtn:hover {
   font-size: 31px;
   margin-bottom: 60px;
   padding: 0 300px;
+  font-weight: lighter;
 }
 .delivery-service > .description .desc-format {
   font-size: 17px;
   font-weight: lighter;
-  box-sizing: border-box;
+  box-sizing: padding-box;
   color: #d0d4da;
 }
 .delivery-service > .description #desc-format-left {
@@ -439,7 +467,7 @@ body #myBtn:hover {
 
 /*Testimonials*/
 /*testimonials mobile*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
   .testimonials #testimonials-content {
     padding: 0 40px !important;
   }
@@ -462,7 +490,7 @@ body #myBtn:hover {
 
 /*happy-hour*/
 /*happy-hour mobile*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
   .happy-hour .happy-hour-format {
     color: #e5d7b2;
     text-align: center;
@@ -506,25 +534,12 @@ body #myBtn:hover {
     padding: 2% 10%;
     background: #10141d;
   }
-  .happy-hour .happy-hour-bg {
-    height: 50%;
-  }
-  .happy-hour .happy-hour-middlecontent {
-    position: relative;
-    margin-top: -30px !important;
-  }
   .happy-hour .happy-hour-middlecontent > #middle-img1 {
-    position: absolute;
-    left: 200px !important;
-    top: -30px !important;
     width: 206px !important;
     height: 257px !important;
     animation: middlecontent-mobile 5s infinite alternate;
   }
   .happy-hour .happy-hour-middlecontent > #middle-img2 {
-    position: absolute;
-    left: 240px !important;
-    top: -100px !important;
     width: 204px !important;
     height: 253px !important;
     animation: middlecontent-mobile 5s infinite alternate;
@@ -537,11 +552,9 @@ body #myBtn:hover {
   .happy-hour .happy-hour-rightcontent > p {
     font-size: 17px !important;
     font-weight: 600 !important;
-    padding: 0 180px 10px !important;
   }
   .happy-hour .happy-hour-rightcontent {
-    padding: 0 !important;
-    margin-top: 250px !important;
+    padding: 100px 20px 0 !important;
   }
 }
 /*happy-hour normal*/
@@ -580,11 +593,6 @@ body #myBtn:hover {
   font-size: 32px;
   font-weight: 100;
 }
-.happy-hour .happy-hour-leftcontent,
-.happy-hour-rightcontent {
-  margin-top: 150px;
-  margin-bottom: 150px;
-}
 .happy-hour .happy-hour-leftcontent > .main-content {
   font-weight: 600;
 }
@@ -599,11 +607,12 @@ body #myBtn:hover {
   font-weight: 600;
 }
 .happy-hour .happy-hour-rightcontent {
-  padding: 40px 30px 0 40px;
 }
 .happy-hour .happy-hour-rightcontent > p {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  padding: 0 !important;
+  margin-top: 100px !important;
 }
 .happy-hour .happy-hour-rightcontent > a {
   color: #e5d7b2;
@@ -634,13 +643,19 @@ body #myBtn:hover {
 
 /*Recommend*/
 /*recommend mobile*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
   .recommend .mobile-hidden {
     visibility: visible !important;
   }
   .recommend .hidden-mobile {
     visibility: hidden !important;
     position: absolute;
+  }
+  .recommend .menu {
+    margin-left: 70px;
+  }
+  .recommend .menu .description {
+    padding-right: 50px;
   }
 }
 /*recommend normal*/
@@ -676,7 +691,10 @@ body #myBtn:hover {
 
 /*Discount On Day*/
 /*discount-on-day mobile*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
+  .discount-onday .mobile-hidden { 
+    display: none !important;
+  }
   .discount-onday .discount-onday-bg {
     height: 250px !important;
   }
