@@ -90,12 +90,12 @@ body #myBtn:hover {
 }
 .banner #banner-title1 {
   color: #fff;
-  font-size: 70px;
+  font-size: 86px;
   font-weight: 700;
 }
 .introduce1 {
   text-align: center;
-  transform: translateX(-70px) translateY(-50px);
+  transform: translateX(-30px) translateY(-50px);
 }
 .introduce1 img {
   width: 80px;
@@ -103,6 +103,8 @@ body #myBtn:hover {
 }
 .introduce1 #banner-title2 {
   color: #e5d7b2;
+  font-size: 50px;
+  font-weight: lighter;
 }
 
 /*content*/
@@ -279,13 +281,13 @@ body #myBtn:hover {
   visibility: hidden;
 }
 .info1 {
-  background: url("../images/demo3-2503194244.jpg");
+  background: url("../images/demo3-2503194244.jpg") no-repeat;
   width: 370px;
   height: 239px;
   position: relative;
 }
 .info2 {
-  background: url("../images/demo3-2502910132.jpg");
+  background: url("../images/demo3-2502910132.jpg") no-repeat;
   width: 756px;
   height: 239px;
   position: relative;
@@ -503,6 +505,7 @@ body #myBtn:hover {
   }
   .happy-hour .happy-hour-leftcontent {
     margin-top: 0 !important;
+    padding: 0 !important;
   }
   .happy-hour .happy-hour-leftcontent > #date {
     font-size: 26px !important;
@@ -594,8 +597,14 @@ body #myBtn:hover {
 .happy-hour .happy-hour-format {
   color: #e5d7b2;
   text-align: center;
-  padding: 30px 10px 10px;
+  padding: 60px 10px 10px;
 }
+.happy-hour .happy-hour-leftcontent {
+  padding-top: 120px;
+} 
+.happy-hour .happy-hour-rightcontent {
+  padding-top: 120px;
+} 
 .happy-hour .happy-hour-leftcontent > #date {
   font-size: 32px;
   font-weight: 100;
@@ -612,8 +621,6 @@ body #myBtn:hover {
   margin-top: 0;
   font-size: 60px;
   font-weight: 600;
-}
-.happy-hour .happy-hour-rightcontent {
 }
 .happy-hour .happy-hour-rightcontent > p {
   font-size: 20px !important;
