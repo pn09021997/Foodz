@@ -35,7 +35,6 @@ body #myBtn {
 body #myBtn:hover {
   opacity: 4;
 }
-
 /*Top Header*/
 /*top-header mobile*/
 @media screen and (max-width: 400px) {
@@ -45,15 +44,15 @@ body #myBtn:hover {
   }
   .banner .banner-bg {
     height: 500px !important;
-   }
+  }
   .banner .introduce1 > img {
     width: 4rem !important;
-    height:  4rem !important;
+    height: 4rem !important;
   }
   .banner .introduce1 {
     transform: translateX(70px) translateY(-50px) !important;
-    padding: 0 85px 0 0  !important;
-  } 
+    padding: 0 85px 0 0 !important;
+  }
   .banner .introduce1 #banner-title1 {
     font-size: 3.2rem !important;
     margin-bottom: 0;
@@ -87,6 +86,7 @@ body #myBtn:hover {
   width: 100%;
   height: 650px;
   position: relative;
+  padding: 0;
 }
 .banner #banner-title1 {
   color: #fff;
@@ -117,7 +117,7 @@ body #myBtn:hover {
 /*Feature Menu*/
 /*feature-menu mobile*/
 @media screen and (max-width: 400px) {
-  .feature-menu #demo{
+  .feature-menu #demo {
     margin-bottom: 30rem !important;
   }
   .feature-menu #img-chief3 {
@@ -128,7 +128,7 @@ body #myBtn:hover {
     top: 0 !important;
   }
 
-  .feature-menu #img-chief1 { 
+  .feature-menu #img-chief1 {
     width: 10rem !important;
     height: 13rem !important;
     position: absolute;
@@ -155,17 +155,17 @@ body #myBtn:hover {
   .feature-menu .hidden {
     visibility: hidden;
     position: absolute;
-  } 
+  }
   .feature-menu .feature-menu-item {
     padding-left: 5rem;
-  } 
+  }
   .feature-menu .description {
     font-size: 0.9rem !important;
   }
   .feature-menu .product-name {
     font-size: 1.3rem !important;
     padding: 0 10px 0 10px !important;
-  } 
+  }
   .feature-menu #hidden-mobile {
     visibility: hidden;
     position: absolute;
@@ -360,12 +360,12 @@ body #myBtn:hover {
   }
   .getpromocode .mobile-hidden {
     display: block !important;
-  } 
+  }
   .getpromocode .getpromocode-bg {
     height: 280px !important;
     width: 360px !important;
     background-position: 25% top !important;
-  } 
+  }
   .getpromocode #discount {
     font-size: 2rem !important;
     font-weight: lighter !important;
@@ -374,7 +374,7 @@ body #myBtn:hover {
     font-size: 2rem !important;
   }
   .getpromocode .promocode-form {
-    margin: 300px 20px 0  !important; 
+    margin: 300px 20px 0 !important;
   }
   .getpromocode #input-email {
     background: #404351;
@@ -408,9 +408,10 @@ body #myBtn:hover {
   background: url("../images/demo3-2551484526.jpg") no-repeat;
   background-position: center -150px;
   background-size: cover;
-  width: 1371px;
+  width: 100%;
   height: 400px;
   position: relative;
+  padding: 0;
 }
 .getpromocode #input-email {
   background: #404351;
@@ -439,7 +440,7 @@ body #myBtn:hover {
     padding: 0 0 !important;
   }
   .delivery-service > .description .desc-format {
-    margin-bottom:25px !important;
+    margin-bottom: 25px !important;
   }
 }
 /*delivery-service-normal*/
@@ -473,9 +474,10 @@ body #myBtn:hover {
   }
 }
 /*testimonials normal*/
-.testimonials {
+.testimonials .testimonials-bg {
   background: #1c2230;
   padding-bottom: 40px;
+  width: 100%;
 }
 .testimonials #testimonials-title {
   font-size: 31px;
@@ -491,6 +493,9 @@ body #myBtn:hover {
 /*happy-hour*/
 /*happy-hour mobile*/
 @media screen and (max-width: 400px) {
+  .happy-hour .happy-hour-bg {
+    height: 950px !important;
+  }
   .happy-hour .happy-hour-format {
     color: #e5d7b2;
     text-align: center;
@@ -579,6 +584,8 @@ body #myBtn:hover {
   background-position: center;
   background-size: cover;
   width: 100%;
+  height: 671px;
+  padding: 0;
 }
 .happy-hour .happy-hour-leftcontent > img {
   width: 56px;
@@ -692,34 +699,25 @@ body #myBtn:hover {
 /*Discount On Day*/
 /*discount-on-day mobile*/
 @media screen and (max-width: 400px) {
-  .discount-onday .mobile-hidden { 
-    display: none !important;
-  }
   .discount-onday .discount-onday-bg {
-    height: 250px !important;
-  }
-  .discount-onday .discount-onday-format {
-    margin: 30px 10px 100px 300px !important;
+    padding: 0 !important;
   }
   .discount-onday .sale-time-display {
-    padding: 0 !important;
+    padding: 100px 80px 20px !important;
     margin: 0 !important;
-    display: flex !important;
-    padding: 20px 50px 30px !important;
   }
+
   .discount-onday .sale-time-link {
-    width: 55px !important;
-    height: 60px !important;
+    width: 3.5rem !important;
+    height: 3.8rem !important;
     padding: 0 !important;
-  }
-  .discount-onday #discount-onday-title {
-    font-size: 17.6px !important;
   }
   .discount-onday #discount-onday-description {
-    font-size: 22px !important;
+    font-size: 2.5rem !important;
+    font-weight: bold !important;
   }
   .discount-onday #read-more {
-    font-size: 8.25px !important;
+    font-size: 0.95rem !important;
   }
 }
 /*discount-on-day normal*/
@@ -727,8 +725,9 @@ body #myBtn:hover {
   background: url("../images/demo-0117155819.jpg") no-repeat;
   background-position: center;
   background-size: cover;
-  width: 1371px;
+  width: 100%;
   height: 400px;
+  padding: 0;
 }
 .discount-onday .sale-time-display {
   padding: 100px 200px 20px 370px;
@@ -770,13 +769,13 @@ body #myBtn:hover {
 /*blog-post mobile*/
 @media screen and (max-width: 768px) {
   .blog-posts .blog-post-item {
-    padding: 0 10px 40px 90px !important;
+    padding-left: 20px !important;
   }
   .blog-posts .blog-post-content {
     padding-right: 50px !important;
   }
   .blog-posts .blog-post-title {
-    font-size: 25px !important;
+    font-size: 1.5rem !important;
     padding-right: 70px !important;
   }
 }
@@ -821,7 +820,7 @@ body #myBtn:hover {
 /*Benefic*/
 /*benefic mobile*/
 @media screen and (max-width: 768px) {
-  .benefit .benefit-item{
+  .benefit .benefit-item {
     padding-bottom: 30px;
   }
   .benefit .benefit-bg {
@@ -833,61 +832,68 @@ body #myBtn:hover {
   background: url("../images/demo-0120750638.jpg");
   background-position: center;
   background-size: cover;
-  width: 1371px;
+  width: 100%;
+  padding: 0;
 }
 .benefit .benefit-format {
   margin: 100px 0;
 }
-.benefit .benefit-title{
+.benefit .benefit-title {
   font-size: 20px;
   margin: 20px 0 34px;
 }
-.benefit .benefit-content{
+.benefit .benefit-content {
   font-size: 17px;
   font-weight: lighter;
   padding: 0 50px;
-}  
+}
 
 /*Contact*/
 /*contact mobile*/
 @media screen and (max-width: 768px) {
   .contact #input-email1 {
-    width: 400px !important;
+    width: 300px !important;
+    margin-bottom: 20px !important;
   }
   .contact .sign-up-link {
-    padding: 15px 33px 16px !important;
-  } 
+    padding: 15px 119px !important;
+    margin-left: 50px !important;
+  }
   .contact .description {
     text-align: center;
-  } 
-  .contact #contact-phone{
-    margin-left: 150px;
+  }
+  .contact #contact-phone {
+    margin-left: 80px;
     padding-left: 0 !important;
   }
   .contact #contact-address-desc {
     padding-right: 10px !important;
-}
-.contact .contact-email{
-  padding-right: 20px !important;
-}
-.contact .contact-menu .contact-item {
-  padding-left: 45px !important;
-} 
-.contact .contact-page .contact-item {
-  padding-left: 25px !important;
-} 
-.contact .contact-help{
-  padding-left: 0 !important;
-}
-.contact .contact-categories {
-  padding-right: 200px !important;
-} 
-.contact .contact-help .contact-item{
-  padding-left: 20px !important;
-}
-.contact .contact-help {
-  padding-left: 20px !important;
-} 
+  }
+  .contact .contact-page {
+    padding: 0 !important  ;
+  }
+  .contact .contact-email {
+    padding-right: 20px !important;
+    text-align: left;
+  }
+  .contact .contact-menu .contact-item {
+    padding-left: 60px !important;
+  }
+  .contact .contact-page .contact-item {
+    padding-left: 70px !important;
+  }
+  .contact .contact-help {
+    padding-left: 0 !important;
+  }
+  .contact .contact-categories {
+    padding-right: 200px !important;
+  }
+  .contact .contact-help .contact-item {
+    padding-left: 50px !important;
+  }
+  .contact .contact-help {
+    padding-left: 20px !important;
+  }
 }
 /*contact normal*/
 .contact {
@@ -898,7 +904,7 @@ body #myBtn:hover {
   font-size: 14px;
   font-weight: lighter;
 }
-.contact .contact-item{
+.contact .contact-item {
   padding: 10px 0;
 }
 .contact .contact-item > a {
@@ -908,15 +914,15 @@ body #myBtn:hover {
   padding: 10px 0;
   font-weight: lighter;
 }
-.contact .contact-menu-title{
+.contact .contact-menu-title {
   font-size: 15px;
-  color: #D0D4D9;
+  color: #d0d4d9;
   font-weight: lighter;
 }
-.contact-title{
+.contact-title {
   font-size: 31px;
 }
-.contact-content{
+.contact-content {
   font-size: 17px;
   font-weight: lighter;
 }
@@ -927,7 +933,7 @@ body #myBtn:hover {
   width: 500px;
   margin-right: 0;
 }
-.contact .sign-up-link{
+.contact .sign-up-link {
   text-decoration: none;
   color: #000;
   background: #fff;
@@ -955,7 +961,7 @@ body #myBtn:hover {
 }
 .contact .contact-categories {
   padding-top: 50px;
-} 
+}
 .contact .contact-address {
   color: #989da4;
 }
@@ -971,26 +977,27 @@ body #myBtn:hover {
 /*Footer*/
 /*footer mobile*/
 @media screen and (max-width: 768px) {
-  footer { 
+  footer {
     text-align: center !important;
   }
-  footer .footer-society-contact{
+  footer .footer-society-contact {
     text-align: center !important;
   }
 }
 /*footer normal*/
-footer{
+footer {
   background: #1b212f;
   padding: 30px 0;
 }
-footer p,a{
+footer p,
+a {
   color: #989da4;
 }
 footer #footer-copyright {
   font-size: 14px;
   font-weight: lighter;
-} 
-footer .footer-society-contact{
+}
+footer .footer-society-contact {
   font-size: 20px;
   text-align: right;
 }
